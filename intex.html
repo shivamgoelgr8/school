@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    :root {
+        --b: rgb(0, 0, 0);
+        --w: rgb(255, 255, 255);
+        --c: rgb(255, 255, 255);
+    }
+body{
+    
+}
+    .p1 {
+        position: relative;
+        background: linear-gradient(135deg, #fb00ffd0, #00dadec6),
+            url(img/books-2596809_1920.jpg) no-repeat;
+        height: 100vh;
+    }
+
+    .custom-shape-divider-bottom-1659995015 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1659995015 svg {
+        position: relative;
+        display: block;
+        width: calc(145% + 1.3px);
+        height: 315px;
+    }
+
+    .custom-shape-divider-bottom-1659995015 .shape-fill {
+        fill: var(--c);
+        ;
+    }
+
+    .pici {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .p1h1 {
+        color: var(--w);
+        font-size: 40px;
+        margin: 50px 0px;
+    }
+
+    .size {
+        font-size: 40px;
+        color: var(--w);
+
+        z-index: 4;
+    }
+
+    .p1size {
+        font-size: 40px;
+        color: var(--w);
+    }
+
+    .logo {
+        padding: 0px 0px 0px 60px;
+        display: inline-block;
+    }
+
+    .checkbtn {
+        color: var(--w);
+        font-size: 35px;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .li {
+        text-decoration: none;
+        padding: 22px 10px;
+        ;
+        margin: 0px 0px;
+        color: gray;
+    }
+
+    .a {
+        text-decoration: none;
+        color: var(--w);
+        text-transform: uppercase;
+        font-size: 21px;
+    }
+
+    .a:hover {
+        transition: all 0.4s;
+
+        color: rgb(20, 10, 10);
+        cursor: pointer;
+    }
+
+    .ul {
+        display: flex;
+        color: var(--w);
+        list-style: none;
+        padding: 0px 60px;
+
+
+    }
+
+    @media screen and (max-width: 800px) {
+        .checkbtn {
+            display: block;
+        }
+
+        .ul {
+            position: fixed;
+            top: 104px;
+            left: -100%;
+            background: linear-gradient(125deg, #fc00ff, #00dbde);
+            height: 100vh;
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin: -20px 0px;
+            transition: all 0.4s ease-in;
+            border-bottom-left-radius: 30px;
+            z-index: 2;
+            padding: 0px 0px;
+        }
+
+        .li {
+            padding: 60px 0px 0px 0px;
+
+        }
+
+        .a {
+            font-size: 30px;
+        }
+    }
+
+    #check:checked~.ul {
+        left: 0px;
+    }
+
+    .p1flex {
+        display: flex;
+        justify-content: space-around;
+        margin: 60px 0px 0px 0px;
+    }
+
+    .imgsmall {
+        max-width: 250px;
+        height: auto;
+
+    }
+
+    .p1text {
+        width: 30em;
+        height: auto;
+        display: inline-block;
+
+    }
+
+    .p1p1 {
+        margin: 0px 0px;
+        font-size: 20px;
+        color: var(--w);
+    }
+
+    .h1p1 {
+        padding: 0px 0pc 12px 0px;
+        font-size: 56px;
+        color: var(--w);
+    }
+
+    @media screen and (max-width:800px) {
+        .p1flex {
+            display: block;
+        }
+
+        .p1text {
+            display: block;
+            text-align: center;
+            width: auto;
+            padding: 0px 60px;
+        }
+
+        .p1 {
+            min-height: 780px;
+        }
+
+        .flexim {
+            display: flex;
+            justify-content: center;
+            padding: 40px 0px 0px 0px;
+        }
+
+        .h1p1 {
+            font-size: 39px;
+        }
+
+        .p1p1 {
+            font-size: 18px;
+        }
+    }
+
+    @media screen and (max-width:430px) {
+        .p1flex {
+            margin: 12px 0px 0px 0px;
+        }
+    }
+
+    .p2wid {
+        max-width: 500px;
+        height: auto;
+    }
+
+    .ds {
+        position: relative;
+        background-color: var(--c);
+        height: 100%;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+    .dgr1 {
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        transform: translate(-250px, -120px);
+        background: linear-gradient(125deg, #ee0979, #ff6a00);
+    }
+
+    .dgr2 {
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        transform: translate(250px, 150px);
+        background: linear-gradient(25deg, #de6161, #2567ed);
+    }
+
+    .dgr3 {
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        transform: translate(-305px, 468px);
+        background: linear-gradient(125deg, #43C6AC, #191654);
+    }
+
+    .glass {
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        width: 360px;
+        height: auto;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 40px;
+        grid-row-gap: 50px;
+        padding: 100px 0px;
+    }
+
+    .dg1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .dg2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .dg3 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .dg4 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .dg5 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .dg6 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .dsicon {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+
+    }
+
+    .iconds {
+
+        width: 50px;
+        font-size: 40px;
+        border-radius: 114px;
+        color: var(--b);
+        padding: 20px 0px;
+
+    }
+
+    .dsd1 {
+        padding: 0px 20px;
+        color: var(--b);
+    }
+
+    .dsh1 {
+        font-family: Times, serif;
+        padding: 0px 0px 30px 0px;
+    }
+
+    .dsp1 {
+        font-family: Times, serif;
+        padding: 0px 0px 30px 0px;
+    }
+
+    @media screen and (max-width: 1173px) {
+        .parent {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 40px;
+            grid-row-gap: 50px;
+        }
+
+        .dg1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .dg2 {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .dg3 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .dg4 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .dg5 {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        .dg6 {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 40px;
+            grid-row-gap: 50px;
+        }
+
+        .dg1 {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        .dg2 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .dg3 {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        .dg4 {
+            grid-area: 4 / 1 / 5 / 2;
+        }
+
+        .dg5 {
+            grid-area: 5 / 1 / 6 / 2;
+        }
+
+        .dg6 {
+            grid-area: 6 / 1 / 7 / 2;
+        }
+    }
+
+    @media(prefers-color-scheme:dark) {
+        .p1 {
+            background: linear-gradient(135deg, #151e1583, #000000b3),
+                url(img/books-2596809_1920.jpg) no-repeat;
+        }
+
+        :root {
+            --c: rgb(0, 0, 0);
+            --b: rgb(255, 255, 255);
+        }
+    }
+</style>
+
+<body>
+    <div class="p1">
+        <div class="custom-shape-divider-bottom-1659995015">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="pici">
+            <div class="logo">
+                <h3 class="  p1size">Logo</h3>
+                <i class="size fa-brands fa-accusoft"></i>
+            </div>
+            <div class="ull">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid blac fa-bars"></i>
+                </label>
+                <ul class="  ul">
+
+                    <li class="li "><a href="#" class="a">home</a></li>
+                    <li class="li "><a href="#about" class="a">about</a></li>
+                    <li class="li"><a href="#feat" class="a">Features</a></li>
+
+                    <li class="li "><a href="#rev" class="a"> Reviews</a></li>
+                    <li class="li "><a href="#con" class="a"> contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="p1flex">
+            <div class="p1text">
+                <h1 class="  h1p1">This is time to rise</h1>
+                <p class="  p1p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum officia iusto hic
+                    dignissimos fuga, atque odit obcaecati distinctio nesciunt nisi officiis magnam voluptas quos magni
+                    assumenda cumque delectus quae harum.</p>
+            </div>
+            <div class="  flexim"><img class="imgsmall" src="img/undraw_education_f8ru.svg" alt=""></div>
+        </div>
+    </div>
+    <div class="ds">
+        <div class="dgr1"></div>
+        <div class="dgr2"></div>
+        <div class="dgr3"></div>
+        <div class="parent">
+            <div class="glass dg1">
+                <div class="dsicon">
+                    <i class="fa-solid iconds fa-bacterium"></i>
+                </div>
+                <div class="dsd1">
+                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
+                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
+                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
+                        quisquam maiores officia reiciendis consectetur?</p>
+                </div>
+            </div>
+            <div class="glass dg2">
+                <div class="dsicon">
+                    <i class="fa-solid iconds fa-bacterium"></i>
+                </div>
+                <div class="dsd1">
+                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
+                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
+                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
+                        quisquam maiores officia reiciendis consectetur?</p>
+                </div>
+            </div>
+            <div class="glass dg3">
+                <div class="dsicon">
+                    <i class="fa-solid iconds fa-bacterium"></i>
+                </div>
+                <div class="dsd1">
+                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
+                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
+                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
+                        quisquam maiores officia reiciendis consectetur?</p>
+                </div>
+            </div>
+            <div class="glass dg4">
+                <div class="dsicon">
+                    <i class="fa-solid iconds fa-bacterium"></i>
+                </div>
+                <div class="dsd1">
+                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
+                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
+                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
+                        quisquam maiores officia reiciendis consectetur?</p>
+                </div>
+            </div>
+            <div class="glass dg5">
+                <div class="dsicon">
+                    <i class="fa-solid iconds fa-bacterium"></i>
+                </div>
+                <div class="dsd1">
+                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
+                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
+                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
+                        quisquam maiores officia reiciendis consectetur?</p>
+                </div>
+            </div>
+            <div class="glass dg6">
+                <div class="dsicon">
+                    <i class="fa-solid iconds fa-bacterium"></i>
+                </div>
+                <div class="dsd1">
+                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
+                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
+                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
+                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
+                        quisquam maiores officia reiciendis consectetur?</p>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>
