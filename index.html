@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <meta charset="UTF-8">
@@ -12,7 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <link rel="icon" href="img/schoollogo.png">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <style>
     * {
@@ -25,7 +29,7 @@
         --w: rgb(255, 255, 255);
         --c: rgb(255, 255, 255);
         --a161623: rgb(215 215 215);
-        --b161623:#ffffff;
+        --b161623: #ffffff;
 
     }
 
@@ -297,11 +301,11 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 40px;
-        grid-row-gap: 50px;
+        grid-row-gap: 35px;
         padding: 100px 0px;
     }
 
-    .dg1 {
+    .dg1 y {
         grid-area: 1 / 1 / 2 / 2;
     }
 
@@ -365,7 +369,7 @@
             grid-row-gap: 50px;
         }
 
-        .dg1 {
+        .dg1 y {
             grid-area: 1 / 1 / 2 / 2;
         }
 
@@ -399,7 +403,7 @@
             grid-row-gap: 50px;
         }
 
-        .dg1 {
+        .dg1 y {
             grid-area: 1 / 1 / 2 / 2;
         }
 
@@ -426,14 +430,15 @@
 
     .px {
         width: 100%;
-      
+
         background: url(img/light.svg), no-repeat;
         transform: rotate(360deg);
 
     }
+
     .px2 {
         width: 100%;
-      
+
         background: url(img/l2.svg), no-repeat;
         transform: rotate(360deg);
 
@@ -444,7 +449,7 @@
     }
 
     .pxd1 {
-        color: var(--b);
+        color: white;
         text-align: center;
         padding: 20px 0px 50px 0px;
         font-size: 35px;
@@ -496,7 +501,7 @@
         padding: 20px 0px;
     }
 
-   
+
 
     .card1 {
         width: 300px;
@@ -504,6 +509,7 @@
         background: linear-gradient(135deg, #4e54c8, #8f94fb);
         border-radius: 10px;
     }
+
     .card12 {
         width: 300px;
         height: 300px;
@@ -532,7 +538,7 @@
 
     .cardtext {
         padding: 10px 43px;
-    font-size: 26px;
+        font-size: 26px;
     }
 
     .pxt {
@@ -553,6 +559,7 @@
         background: linear-gradient(135deg, #616161, #9bc5c3);
         border-radius: 10px;
     }
+
     .card21 {
         width: 300px;
         height: 300px;
@@ -566,52 +573,72 @@
         background: linear-gradient(135deg, #FF4E50, #F9D423);
         border-radius: 10px;
     }
+
     .card3 {
         width: 300px;
         height: 300px;
-        background: linear-gradient(135deg, #4AC29A,#BDFFF3);
+        background: linear-gradient(135deg, #4AC29A, #BDFFF3);
         border-radius: 10px;
     }
-    .logoo{
+
+    .logoo {
         width: 80px;
         height: 80px;
         padding: 0px 20px 0px 0px;
     }
+
+    .fet {
+        text-align: center;
+    font-size: 60px;
+    color: var(--b);
+    margin: 60px 0px -60px 0px;
+    }
+
     @media screen and (max-width: 1050px) {
-        .pxflex{
+        .pxflex {
             display: block;
             width: 50%;
             margin: 0px auto;
         }
-        .pxres{
+
+        .pxres {
             display: block;
         }
     }
+
     @media screen and (max-width: 650px) {
-        .pxim{
+        .pxim {
             display: block;
         }
-        .pximg{
-           display: block;
-          
-           margin: 0px auto;
+
+        .pximg {
+            display: block;
+
+            margin: 0px auto;
         }
-        .pxresult{
-           text-align: center;
-           padding: 20px 0px;
+
+        .pxresult {
+            text-align: center;
+            padding: 20px 0px;
         }
-        .pxpad{
+
+        .pxpad {
             display: inline-block;
         }
     }
-        @media screen and (max-width: 456px) {
-            .pxflex
-            { width: 83%;}
+
+    @media screen and (max-width: 456px) {
+        .pxflex {
+            width: 83%;
         }
-        @media screen and (max-width: 366px) {
-            .pxflex
-            { width: 100%;}
+    }
+
+    @media screen and (max-width: 366px) {
+        .pxflex {
+            width: 100%;
         }
+    }
+
     @media(prefers-color-scheme:dark) {
         .p1 {
             background: linear-gradient(135deg, #151e1583, #000000b3),
@@ -621,11 +648,15 @@
         :root {
             --c: rgb(0, 0, 0);
             --b: rgb(255, 255, 255);
-            --a161623: rgb(86,86, 113);
-            --b161623:#1a1a29;
+            --a161623: rgb(86, 86, 113);
+            --b161623: #1a1a29;
         }
-        .px{background: url(img/d2.svg);}
-        .px2{
+
+        .px {
+            background: url(img/d2.svg);
+        }
+
+        .px2 {
             background: url(img/dark.svg);
         }
     }
@@ -645,15 +676,15 @@
         <div class="pici">
             <div class="logo">
                 <img class="logoo" src="img/schoollogo.png" alt="">
-                <h3 class="  p1size">Code The Infinity</h3>
-                
+                <h3 class=" x p1size">Code The Infinity</h3>
+
             </div>
             <div class="ull">
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
                     <i class="fa-solid blac fa-bars"></i>
                 </label>
-                <ul class="  ul">
+                <ul class=" x ul">
 
                     <li class="li "><a href="#" class="a">home</a></li>
                     <li class="li "><a href="#about" class="a">about</a></li>
@@ -667,25 +698,26 @@
         </div>
         <div class="p1flex">
             <div class="p1text">
-                <h1 class="  h1p1">This is time to rise</h1>
-                <p class="  p1p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum officia iusto hic
+                <h1 class=" x h1p1">This is time to rise</h1>
+                <p class="y  p1p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum officia iusto
+                    hic
                     dignissimos fuga, atque odit obcaecati distinctio nesciunt nisi officiis magnam voluptas quos magni
                     assumenda cumque delectus quae harum.</p>
             </div>
-            <div class="  flexim"><img class="imgsmall" src="img/undraw_education_f8ru.svg" alt=""></div>
+            <div class="y  flexim"><img class="imgsmall" src="img/undraw_education_f8ru.svg" alt=""></div>
         </div>
     </div>
 
     <div class="px">
         <div class="pxhead">
-            <div class="pxd1">
+            <div class="pxd1 z">
                 <h1>CLASS 10 Result</h1>
             </div>
             <div class="pxim">
-                <div class="pximg">
+                <div class=" y pximg">
                     <img class="pximg" src="img/final podium.png" alt="">
                 </div>
-                <div class="pxresult">
+                <div class="y pxresult">
                     <h1 class="pxpad">
                         A Total of 30 Students
                     </h1>
@@ -695,7 +727,7 @@
 
                 </div>
             </div>
-            <div class="pxflex">
+            <div class="z pxflex">
                 <div class="pxres">
                     <h1 class="pxt">Above 95%</h1>
                     <div class="swiper mySwiper">
@@ -1060,7 +1092,7 @@
 
 
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -1149,10 +1181,10 @@
     </div>
     <div class="px2">
         <div class="pxhead">
-            <div class="pxd1">
+            <div class="x pxd1">
                 <h1>CLASS 12 Result</h1>
             </div>
-            <div class="pxim">
+            <div class=" y pxim">
                 <div class="pximg">
                     <img class="pximg" src="img/final podium.png" alt="">
                 </div>
@@ -1166,14 +1198,14 @@
 
                 </div>
             </div>
-            <div class="pxflex">
+            <div class="z pxflex">
                 <div class="pxres">
                     <h1 class="pxt">Medical</h1>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            
 
-                            
+
+
                             <div class="swiper-slide">
                                 <div class="card12">
                                     <div class="cardim">
@@ -1380,8 +1412,8 @@
 
 
                             </div>
-                            
-                            
+
+
 
                         </div>
                     </div>
@@ -1390,7 +1422,7 @@
                     <h1 class="pxt">Commerce</h1>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            
+
                             <div class="swiper-slide">
                                 <div class="card3">
                                     <div class="cardim">
@@ -1468,15 +1500,18 @@
 
             </div>
         </div>
+        <h1 class="x fet">Features</h1>
     </div>
-    
+
     </div>
     <div class="ds">
-        <div class="dgr1"></div>
-        <div class="dgr2"></div>
-        <div class="dgr3"></div>
+
+        <div class="z  dgr1"></div>
+        <div class="z dgr2"></div>
+        <div class="z dgr3"></div>
+
         <div class="parent">
-            <div class="glass dg1">
+            <div class="glass dg1 y">
                 <div class="dsicon">
                     <i class="fa-solid iconds fa-person-chalkboard"></i>
                 </div>
@@ -1488,7 +1523,7 @@
                         quisquam maiores officia reiciendis consectetur?</p>
                 </div>
             </div>
-            <div class="glass dg2">
+            <div class="glass dg2 y">
                 <div class="dsicon">
                     <ion-icon class="iconds" name="newspaper-outline"></ion-icon>
                 </div>
@@ -1500,7 +1535,7 @@
                         quisquam maiores officia reiciendis consectetur?</p>
                 </div>
             </div>
-            <div class="glass dg3">
+            <div class="glass dg3 y">
                 <div class="dsicon">
                     <ion-icon class="iconds" name="desktop-outline"></ion-icon>
                 </div>
@@ -1512,7 +1547,7 @@
                         quisquam maiores officia reiciendis consectetur?</p>
                 </div>
             </div>
-            <div class="glass dg4">
+            <div class="glass dg4 y">
                 <div class="dsicon">
                     <i class="fa-regular fa-send-back"></i>
                 </div>
@@ -1524,7 +1559,7 @@
                         quisquam maiores officia reiciendis consectetur?</p>
                 </div>
             </div>
-            <div class="glass dg5">
+            <div class="glass dg5 y">
                 <div class="dsicon">
                     <i class="fa-solid iconds fa-bacterium"></i>
                 </div>
@@ -1536,7 +1571,7 @@
                         quisquam maiores officia reiciendis consectetur?</p>
                 </div>
             </div>
-            <div class="glass dg6">
+            <div class="glass dg6 y">
                 <div class="dsicon">
                     <i class="fa-solid iconds fa-bacterium"></i>
                 </div>
@@ -1554,6 +1589,11 @@
 <script>
     var swiper = new Swiper(".mySwiper", {
         effect: "cube",
+        autoplay: {
+            delay: 3000
+        },
+        loop: true,
+
         grabCursor: true,
         cubeEffect: {
             shadow: true,
@@ -1565,6 +1605,16 @@
             el: ".swiper-pagination",
         },
     });
+    ScrollReveal({
+        reset: false,
+        distance: '60px',
+        duration: 2500,
+
+
+    });
+    ScrollReveal().reveal('.x');
+    ScrollReveal().reveal('.y', { delay: 500 });
+    ScrollReveal().reveal('.z', { delay: 1000 });
 </script>
 
 </html>
