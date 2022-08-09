@@ -423,7 +423,7 @@
 
     .px {
         width: 100%;
-        height: 118vh;
+      
         background: url(img/dark.svg), no-repeat;
         transform: rotate(360deg);
 
@@ -486,18 +486,7 @@
         padding: 20px 0px;
     }
 
-    @media(prefers-color-scheme:dark) {
-        .p1 {
-            background: linear-gradient(135deg, #151e1583, #000000b3),
-                url(img/books-2596809_1920.jpg) no-repeat;
-        }
-
-        :root {
-            --c: rgb(0, 0, 0);
-            --b: rgb(255, 255, 255);
-            --a161623: rgb(51, 51, 76);
-        }
-    }
+   
 
     .card1 {
         width: 300px;
@@ -554,6 +543,49 @@
         height: 300px;
         background: linear-gradient(135deg, #FF4E50, #F9D423);
         border-radius: 10px;
+    }
+    @media screen and (max-width: 1050px) {
+        .pxflex{
+            display: block;
+            width: 50%;
+            margin: 0px auto;
+        }
+        .pxres{
+            display: block;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        .pxim{
+            display: block;
+        }
+        .pximg{
+           display: block;
+          
+           margin: 0px auto;
+        }
+        .pxresult{
+           text-align: center;
+           padding: 20px 0px;
+        }
+        .pxpad{
+            display: inline-block;
+        }
+    }
+        @media screen and (max-width: 456px) {
+            .pxflex
+            { width: 83%;}
+        }
+    @media(prefers-color-scheme:dark) {
+        .p1 {
+            background: linear-gradient(135deg, #151e1583, #000000b3),
+                url(img/books-2596809_1920.jpg) no-repeat;
+        }
+
+        :root {
+            --c: rgb(0, 0, 0);
+            --b: rgb(255, 255, 255);
+            --a161623: rgb(51, 51, 76);
+        }
     }
 </style>
 
