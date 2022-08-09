@@ -6,11 +6,13 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <style>
     * {
@@ -22,14 +24,15 @@
         --b: rgb(0, 0, 0);
         --w: rgb(255, 255, 255);
         --c: rgb(255, 255, 255);
-        --a161623: rgb(225,225,225);
+        --a161623: rgb(225, 225, 225);
+
     }
 
     .p1 {
         position: relative;
         background: linear-gradient(135deg, #fb00ffd0, #00dadec6),
             url(img/books-2596809_1920.jpg) no-repeat;
-        height: 100vh;
+        height: 83vh;
     }
 
     .custom-shape-divider-bottom-1659995015 {
@@ -126,6 +129,7 @@
 
 
     }
+
 
     @media screen and (max-width: 800px) {
         .checkbtn {
@@ -417,6 +421,71 @@
         }
     }
 
+    .px {
+        width: 100%;
+        height: 118vh;
+        background: url(img/dark.svg) no-repeat;
+        transform: rotate(360deg);
+
+    }
+
+    .pxhead {
+        margin: 0px 40px;
+    }
+
+    .pxd1 {
+        color: var(--b);
+        text-align: center;
+        padding: 20px 0px 50px 0px;
+        font-size: 35px;
+
+    }
+
+    .pxim {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .pximg {
+        width: 200px;
+        height: 200px;
+    }
+
+    .pxresult {
+        color: white;
+        padding: 0px 0px;
+
+    }
+
+    .pxpad {
+        padding: 08px 0px;
+    }
+
+    .swiper {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+
+    .pxres {
+        position: relative;
+        display: inline-block;
+        width: 300px;
+        height: 400px;
+        padding: 20px 0px;
+    }
+
     @media(prefers-color-scheme:dark) {
         .p1 {
             background: linear-gradient(135deg, #151e1583, #000000b3),
@@ -426,8 +495,65 @@
         :root {
             --c: rgb(0, 0, 0);
             --b: rgb(255, 255, 255);
-            --a161623:#161623;
+            --a161623: rgb(51, 51, 76);
         }
+    }
+
+    .card1 {
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        border-radius: 10px;
+    }
+
+    .cardimg {
+        max-width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: block;
+    }
+
+    .cardim {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardtex {
+
+        color: white;
+        padding: 6px 0px;
+    }
+
+    .cardtext {
+        padding: 10px 43px;
+    font-size: 28px;
+    }
+
+    .pxt {
+        color: white;
+
+        padding: 0px 0px 20px 0px;
+        font-size: 30px;
+    }
+
+    .pxflex {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .card2 {
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(135deg, #616161, #9bc5c3);
+        border-radius: 10px;
+    }
+
+    .card3 {
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(135deg, #FF4E50, #F9D423);
+        border-radius: 10px;
     }
 </style>
 
@@ -473,6 +599,479 @@
             </div>
             <div class="  flexim"><img class="imgsmall" src="img/undraw_education_f8ru.svg" alt=""></div>
         </div>
+    </div>
+
+    <div class="px">
+        <div class="pxhead">
+            <div class="pxd1">
+                <h1>CLASS 10 Result</h1>
+            </div>
+            <div class="pxim">
+                <div class="pximg">
+                    <img class="pximg" src="img/undraw_education_f8ru.svg" alt="">
+                </div>
+                <div class="pxresult">
+                    <h1 class="pxpad">
+                        A Total of 30 Students
+                    </h1>
+                    <h2 class="pxpad">Above 95% - 10 Students</h2>
+                    <h2 class="pxpad">Above 90% - 15 Students</h2>
+                    <h2 class="pxpad">Above 80% - 5 Students</h2>
+
+                </div>
+            </div>
+            <div class="pxflex">
+                <div class="pxres">
+                    <h1 class="pxt">Above 95%</h1>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card1">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Shahzeb Shahzad</h1>
+                                        <h2 class="cardtext">State Rank - 1</h2>
+                                        <h2 class="cardtext">CBSE Score - 99.8%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card1">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Shreya Singh</h1>
+                                        <h2 class="cardtext">State Rank - 3</h2>
+                                        <h2 class="cardtext">CBSE Score - 99.3%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card1">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Deepanshu Yadav</h1>
+                                        <h2 class="cardtext">State Rank - 5</h2>
+                                        <h2 class="cardtext">CBSE Score - 99.1%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card1">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Bhavika Arora</h1>
+                                        <h2 class="cardtext">State Rank - 9</h2>
+                                        <h2 class="cardtext">CBSE Score - 98.7%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card1">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Madhur Jaink</h1>
+                                        <h2 class="cardtext">State Rank - 11</h2>
+                                        <h2 class="cardtext">CBSE Score - 98.6%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card1">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Pari Singh</h1>
+                                        <h2 class="cardtext">State Rank - 18</h2>
+                                        <h2 class="cardtext">CBSE Score - 98.1%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card1">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Madhav Gupta</h1>
+                                        <h2 class="cardtext">State Rank - 20</h2>
+                                        <h2 class="cardtext">CBSE Score - 97.8%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card1">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Prachi Parek</h1>
+                                        <h2 class="cardtext">State Rank - 22</h2>
+                                        <h2 class="cardtext">CBSE Score - 97%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card1">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Deepanshu Kumar</h1>
+                                        <h2 class="cardtext">State Rank - 40</h2>
+                                        <h2 class="cardtext">CBSE Score - 96.5%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card1">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Deepa Garg</h1>
+                                        <h2 class="cardtext">State Rank - 69</h2>
+                                        <h2 class="cardtext">CBSE Score - 96%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card1">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Rohit Garg</h1>
+                                        <h2 class="cardtext">State Rank - 82</h2>
+                                        <h2 class="cardtext">CBSE Score - 95.5%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="pxres">
+                    <h1 class="pxt">Our 90%</h1>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Shivam Goel</h1>
+                                        <h2 class="cardtext">State Rank - 100</h2>
+                                        <h2 class="cardtext">CBSE Score - 95%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Shivangi Soin</h1>
+                                        <h2 class="cardtext">State Rank - 120</h2>
+                                        <h2 class="cardtext">CBSE Score - 94.8%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Naampreet Singh</h1>
+                                        <h2 class="cardtext">State Rank - 132</h2>
+                                        <h2 class="cardtext">CBSE Score - 94.6%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Yukti Verma</h1>
+                                        <h2 class="cardtext">State Rank - 144</h2>
+                                        <h2 class="cardtext">CBSE Score - 94.2%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Piyush Sharma</h1>
+                                        <h2 class="cardtext">State Rank - 149</h2>
+                                        <h2 class="cardtext">CBSE Score - 94%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Prachi Yadav</h1>
+                                        <h2 class="cardtext">State Rank - 158</h2>
+                                        <h2 class="cardtext">CBSE Score - 93.9%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Shreyansh Raj</h1>
+                                        <h2 class="cardtext">State Rank - 166</h2>
+                                        <h2 class="cardtext">CBSE Score - 93.7%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Shreyasti</h1>
+                                        <h2 class="cardtext">State Rank - 173</h2>
+                                        <h2 class="cardtext">CBSE Score - 93.2%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Shrinjan </h1>
+                                        <h2 class="cardtext">State Rank - 188</h2>
+                                        <h2 class="cardtext">CBSE Score - 92.6%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Bhumaika</h1>
+                                        <h2 class="cardtext">State Rank - 199</h2>
+                                        <h2 class="cardtext">CBSE Score - 92.2%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Puneet Jha</h1>
+                                        <h2 class="cardtext">State Rank - 209</h2>
+                                        <h2 class="cardtext">CBSE Score - 91.6%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Dhani Arora</h1>
+                                        <h2 class="cardtext">State Rank - 222</h2>
+                                        <h2 class="cardtext">CBSE Score - 91.5%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Akshat Jain</h1>
+                                        <h2 class="cardtext">State Rank - 260</h2>
+                                        <h2 class="cardtext">CBSE Score - 91.3%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card2">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Bhaiya</h1>
+                                        <h2 class="cardtext">State Rank - 299</h2>
+                                        <h2 class="cardtext">CBSE Score - 91.1%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pxres">
+                    <h1 class="pxt">Above 80%</h1>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card3">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Soham Mayank</h1>
+                                        <h2 class="cardtext">State Rank - 350</h2>
+                                        <h2 class="cardtext">CBSE Score - 89.9%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card3">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Kyna Mittal</h1>
+                                        <h2 class="cardtext">State Rank - 378</h2>
+                                        <h2 class="cardtext">CBSE Score - 86.4%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card3">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Ram Yadav</h1>
+                                        <h2 class="cardtext">State Rank - 389</h2>
+                                        <h2 class="cardtext">CBSE Score - 84.4%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card3">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/soham.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Prachi Yadav</h1>
+                                        <h2 class="cardtext">State Rank - 423</h2>
+                                        <h2 class="cardtext">CBSE Score - 82%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card3">
+                                    <div class="cardim">
+                                        <img class="cardimg" src="img/books-2596809_1920.jpg" alt="">
+                                    </div>
+                                    <div class="cardtex">
+                                        <h1 class="cardtext ">Inesh tikoo</h1>
+                                        <h2 class="cardtext">State Rank - 499</h2>
+                                        <h2 class="cardtext">CBSE Score - 80.1%</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     </div>
     <div class="ds">
         <div class="dgr1"></div>
@@ -552,7 +1151,22 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 </body>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
 
 </html>
