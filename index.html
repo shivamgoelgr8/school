@@ -27,6 +27,7 @@
     * {
         margin: 0px;
         padding: 0px;
+        scroll-behavior: smooth;
     }
 
     :root {
@@ -35,6 +36,7 @@
         --c: rgb(255, 255, 255);
         --a161623: rgb(215 215 215);
         --b161623: #ffffff;
+        --d9d9d9: #d9d9d9;
 
     }
 
@@ -88,7 +90,7 @@
     }
 
     .p1size {
-        font-size: 40px;
+        font-size: 28px;
         color: var(--w);
     }
 
@@ -179,7 +181,9 @@
 
     #check:checked~.ul {
         left: 0px;
+        
     }
+   
 
     .p1flex {
         display: flex;
@@ -622,7 +626,117 @@
     margin: 60px 0px -60px 0px;
     font-family: 'Audiowide', cursive;
     }
+    .last{
+    background-color: var(--d9d9d9);
+    width: 100%;
+    height: auto;
+    margin: -1px 0px;
+}
+.chad{
+  display: flex;
+  padding: 40px 60px;
+  margin: 0px auto;
+  justify-content: space-evenly;
 
+}
+.no{
+  width: 200px;
+    height: 256px;
+ box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+ background-color: white;
+ border-radius: 10%;
+ display: inline-block;
+ 
+}
+.lastwi{
+  width: 64px;
+  height: 64px;
+  margin: 0px auto;
+  display: block;
+  
+  padding: 15px 0px;
+}
+.lasth1{
+  padding: 0px 0px;
+  margin: 10px 0px 25px 0px;
+  font-size: 27px;
+}
+.lastalign{
+  text-align: center;
+}
+.lastin{
+  font-size: 18px;
+  padding: 0px 00px;
+}
+.lasta{
+  color: #1b356a;
+
+}
+.touch{
+  margin: 0px 70px;
+  padding: 0px 0px;
+}
+.th1{
+  font-size: 60px;
+  color: #1b356a;
+  padding: 0px 0px 10px 0px;
+  font-family: 'Audiowide';
+}
+.th5{
+  font-size: 30px;
+  padding: 15px 0px;
+  color: #2a3139;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.tp{
+  color: #2a3139;
+  font-family: 'Montserrat', sans-serif;
+}
+.media{
+  display: flex;
+  text-align: center;
+}
+.med{
+  margin: 0px auto;
+  width: 100%;
+  display: block;
+}
+.meds{
+  font-size: 31px;
+    padding: 19px 12px;
+    color: #1b356a;
+}
+
+@media screen and (max-width: 920px){
+    .chad{
+      display: block;
+      
+    }
+  .no{
+    display: block;
+    width: 37%;
+    margin: 20px auto
+  }
+}
+@media screen and (max-width: 700px){
+.no {
+    display: block;
+    width: 57%;
+    margin: 20px auto;
+}
+}
+@media screen and (max-width: 520px){
+.no {
+    display: block;
+    width: 77%;
+    margin: 20px auto;
+}}
+@media screen and (max-width: 520px){
+.no{
+    width: 100%;
+}
+}
     @media screen and (max-width: 1050px) {
         .pxflex {
             display: block;
@@ -666,28 +780,7 @@
         }
     }
 
-    @media(prefers-color-scheme:dark) {
-        .p1 {
-            background: linear-gradient(135deg, #151e1583, #000000b3),
-                url(img/books-2596809_1920.jpg) no-repeat;
-        }
-
-        :root {
-            --c: rgb(0, 0, 0);
-            --b: rgb(255, 255, 255);
-            --a161623: rgb(86, 86, 113);
-            --b161623: #1a1a29;
-        }
-
-        .px {
-            background: url(img/d2.svg);
-        }
-
-        .px2 {
-            background: url(img/dark.svg);
-        }
-        
-    }
+   
 .material-symbols-outlined {
   font-size: 65px;
 }
@@ -701,10 +794,57 @@
     
    
 }
+.p1size{
+    display: none;
+}
 .logo{
     display: block;
 }
 }
+@media screen and (max-width: 450px){
+    .pximg{
+        width: 280px;
+    height: 115px;
+    }
+}
+@media(prefers-color-scheme:dark) {
+        .p1 {
+            background: linear-gradient(135deg, #151e1583, #000000b3),
+                url(img/books-2596809_1920.jpg) no-repeat;
+        }
+
+        :root {
+            --c: rgb(0, 0, 0);
+            --b: rgb(255, 255, 255);
+            --a161623: rgb(86, 86, 113);
+            --b161623: #1a1a29;
+            --d9d9d9:  #1a1a29;
+            
+        }
+        @media screen and (max-width: 1040px) {
+            .ul{
+                background: linear-gradient(135deg,#0F2027,#203A43,#2C5364);
+            }
+        }
+.th1{
+    color: white;
+}
+.th5{
+    color: rgb(118, 118, 118);
+}
+.meds{
+    color: white;
+}
+
+        .px {
+            background: url(img/d2.svg);
+        }
+
+        .px2 {
+            background: url(img/dark.svg);
+        }
+        
+    }
 </style>
 </style>
 
@@ -732,11 +872,9 @@
                 </label>
                 <ul class=" x ul">
 
-                    <li class="li "><a href="#" class="a">home</a></li>
-                    <li class="li "><a href="#about" class="a">about</a></li>
+                    <li class="li "><a  href="#" class="a">home</a></li>
+                    <li class="li "><a href="#result" class="a">Results</a></li>
                     <li class="li"><a href="#feat" class="a">Features</a></li>
-
-                    <li class="li "><a href="#rev" class="a"> Reviews</a></li>
                     <li class="li "><a href="#con" class="a"> contact</a></li>
 
                 </ul>
@@ -744,11 +882,8 @@
         </div>
         <div class="p1flex">
             <div class="p1text">
-                <h1 class=" x h1p1">This is time to rise</h1>
-                <p class="y  p1p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum officia iusto
-                    hic
-                    dignissimos fuga, atque odit obcaecati distinctio nesciunt nisi officiis magnam voluptas quos magni
-                    assumenda cumque delectus quae harum.</p>
+                <h1 class=" x h1p1">Karasuno high school</h1>
+                <p class="y  p1p1">One of the best rated schools in the country. Join us in the journey of academic and physical expertise. Join Karasuno, India's leading school, now..</p>
             </div>
             <div class="y  flexim"><img class="imgsmall" src="img/undraw_education_f8ru.svg" alt=""></div>
         </div>
@@ -757,7 +892,7 @@
     <div class="px">
         <div class="pxhead">
             <div class="pxd1 z">
-                <h1>CLASS 10 Result</h1>
+                <h1 id="result">CLASS 10 Result</h1>
             </div>
             <div class="pxim">
                 <div class=" y pximg">
@@ -1546,7 +1681,7 @@
 
             </div>
         </div>
-        <h1 class="x fet">Features</h1>
+        <h1 class="x  fet" id="feat">Features</h1>
     </div>
 
     </div>
@@ -1565,11 +1700,8 @@
                     <i class="fa-solid iconds fa-person-chalkboard"></i>
                 </div>
                 <div class="dsd1">
-                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
-                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
-                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
-                        quisquam maiores officia reiciendis consectetur?</p>
+                    <h1 class="dsh1">One on One interactive learning.</h1>
+                    <p class="dsp1">Our school ensures you get the best learning experience possible. Every teacher carefully curated the perfect learning plan according to each child's learning pace. Get your doubts solved in an instant</p>
                 </div>
             </div>
             <div class="glass dg2 y">
@@ -1577,11 +1709,8 @@
                     <ion-icon class="iconds" name="newspaper-outline"></ion-icon>
                 </div>
                 <div class="dsd1">
-                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
-                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
-                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
-                        quisquam maiores officia reiciendis consectetur?</p>
+                    <h1 class="dsh1">Regular Testing</h1>
+                    <p class="dsp1">Get regular assignments, homeworks, and tests to specify your strong and weak points of learning, and improve them accordingly.</p>
                 </div>
             </div>
             <div class="glass dg3 y">
@@ -1589,11 +1718,8 @@
                     <ion-icon class="iconds" name="desktop-outline"></ion-icon>
                 </div>
                 <div class="dsd1">
-                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
-                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
-                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
-                        quisquam maiores officia reiciendis consectetur?</p>
+                    <h1 class="dsh1">Digital Learning.</h1>
+                    <p class="dsp1">Our school ensures the best technology available in the country to teach the students in the best way possible, from smart boards to computer and tech labs, we utilise the immense potential of using computers in teaching.</p>
                 </div>
             </div>
             <div class="glass dg4 y">
@@ -1603,11 +1729,8 @@
                         </span>
                 </div>
                 <div class="dsd1">
-                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
-                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
-                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
-                        quisquam maiores officia reiciendis consectetur?</p>
+                    <h1 class="dsh1">Co-Operation in Learning</h1>
+                    <p class="dsp1">Learning solely is not fun. We know that, our classroom system makes sure everyone, be it higher in academic prowess or lower, is together and share their ideas together because we believe cooperation is one of the greatest tools in learning.</p>
                 </div>
             </div>
             <div class="glass dg5 y">
@@ -1615,11 +1738,8 @@
                     <i class="fa-solid iconds fa-medal"></i>
                 </div>
                 <div class="dsd1">
-                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
-                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
-                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
-                        quisquam maiores officia reiciendis consectetur?</p>
+                    <h1 class="dsh1">Excellence in Sports</h1>
+                    <p class="dsp1">Having facilities for various sports like badminton and tennis courts, gym, swimming pools, cricket and football grounds, our school makes it sure that your child is not only academically, but also physically fit and fine.</p>
                 </div>
             </div>
             <div class="glass dg6 y">
@@ -1629,15 +1749,68 @@
                         </span>
                 </div>
                 <div class="dsd1">
-                    <h1 class="dsh1">Lorem ipsum dolor sit amet consectetur.</h1>
-                    <p class="dsp1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel at numquam voluptatem
-                        rem atque tempore? Tenetur delectus dolorum sit officia fuga, hic dolor ipsam, debitis adipisci
-                        blanditiis necessitatibus repudiandae ea. Temporibus voluptates eius reprehenderit pariatur
-                        quisquam maiores officia reiciendis consectetur?</p>
+                    <h1 class="dsh1">Improving Vocal Abilities</h1>
+                    <p class="dsp1">Learning is not just memorising. It also means improving your public speaking, and pronounciation skills. Get regular practice and build your confidence with various public speaking courses available.</p>
                 </div>
             </div>
         </div>
     </div>
+    <div id="con" class="last">
+        <div class="chad">
+          <div class="x no">
+            <div class="noo">
+            <img class="lastwi" src="img\gmail.png" alt="">
+            </div>
+            
+            <div class="lastalign">
+              <h1 class="lasth1">EMAIL</h1>
+              <p class="lastin"><a class="lasta" href="mailto:shivamgoelgr8@gmail.com">shivamgoelgr8@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="x no">
+            <div class="noo">
+            <img class="lastwi" src="img\location.png" alt="">
+            </div>
+            <div class="lastalign">
+              <h1 class="lasth1">LOCATION</h1>
+              <p class="lastin"> Panipat, Haryana, India</p>
+            </div>
+          </div>
+          <div class="x no">
+            <div class="noo">
+            <img class="lastwi" src="img\call.png" alt="">
+            </div>
+            <div class="lastalign">
+              <h1 class="lasth1">FAX</h1>
+              <p class="lastin">1-234-567-8900</p>
+            </div>
+          </div>
+          <div class="x no" id="con">
+            <div class="noo">
+            <img class="lastwi" src="img\phone.png" alt="">
+            </div>
+            <div class="lastalign">
+              <h1 class="lasth1">CONTACT US</h1>
+              <p class="lastin">+91 7056014000</p>
+            </div>
+          </div>
+          </div>
+          <div class="touch">
+            <h1 class="y th1">Get in touch</h1>
+            <h5 class="z th5">We believe sustainability is vitally important.</h5>
+            
+         
+        </div>
+        <div class="media">
+          <div class="za med">
+         <a href="https://discord.gg/pRhtukFHau"><i class="fa-brands meds fa-discord"></i></a>
+          <a href="https://www.behance.net/thunkjashstudios"><i class="fa-brands meds fa-behance"></i></a>
+          <a href="https://www.reddit.com"><i class="fa-brands meds fa-reddit"></i></a>
+          <a href="https://twitter.com/"><i class="fa-brands meds fa-twitter"></i></a>
+        </div>
+        </div>
+        
+              </div>
 </body>
 <script>
     var swiper = new Swiper(".mySwiper", {
@@ -1668,6 +1841,8 @@
     ScrollReveal().reveal('.x');
     ScrollReveal().reveal('.y', { delay: 500 });
     ScrollReveal().reveal('.z', { delay: 1000 });
+
+    
 </script>
 
 </html>
